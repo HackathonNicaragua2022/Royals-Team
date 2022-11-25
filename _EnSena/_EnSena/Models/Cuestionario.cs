@@ -11,5 +11,7 @@ namespace _EnSena.Models
         public int idLeccionCuestionario { get; set; }
         public int DescripcionClaveCuestionario { get; set; }
         public bool EstadoCompletado { get; set; }
+        public int puntuacionMinima { get; set; }
+        public int puntuacionCuestionario { get; set; }
     }
 }

@@ -11,5 +11,6 @@ namespace _EnSena.Models
         public string psswd { get; set; }
         public string NombreCompleto { get; set; }
         public int idRolUsuario { get; set; }
+        public int puntuacionCursos { get; set; }
     }
 }

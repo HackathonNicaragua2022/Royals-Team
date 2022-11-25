@@ -10,7 +10,7 @@ namespace _EnSena.Models
         public string DecripcionCurso { get; set; }
         public int idUsuarioregistro { get; set; }
         public string TituloCurso { get; set; }
-
+        public int puntuacionMinimaRequerida { get; set; }
 
     }
 }
