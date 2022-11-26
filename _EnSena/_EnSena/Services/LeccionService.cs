@@ -19,6 +19,22 @@ namespace _EnSena.Services
         }
 
 
+        public async Task<List<Leccion>> GetLecciones()
+        {
+            var cuestionarioExist = (await client.Child("Lecciones").OnceAsync<Leccion>()).Select(x=>x.Object).ToList();
+            return cuestionarioExist;
+        }
+
+
+        public async Task<List<Leccion>> GetLeccionesByCurseId(int IdCurso)
+        {
+            var cuestionarioExist = (await client.Child("Lecciones").OnceAsync<Leccion>()).Select(x => x.Object).ToList().FindAll(c=> c.idRecursoLeccion == IdCurso);
+            return cuestionarioExist;
+        }
+
+
+        
+
 
         public async Task<bool> isLeccionExist(Leccion toComprove)
         {
