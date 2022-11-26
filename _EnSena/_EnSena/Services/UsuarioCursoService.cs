@@ -44,6 +44,16 @@ namespace _EnSena.Services
 
         }
 
+        public async Task<List<UsuarioCurso>> GetUsuarioCurso()
+        {
+            var cursos = (await client.Child("UserCurses").OnceAsync<UsuarioCurso>()).Select(x => x.Object).ToList();
+            return cursos;
+        }
+        public async Task<List<UsuarioCurso>> GetUsuarioCursoById(int IdUser)
+        {
+            var cursos = (await client.Child("UserCurses").OnceAsync<UsuarioCurso>()).Select(x => x.Object).Where(x=>x.idUsuarioCurso == IdUser).ToList();
+            return cursos;
+        }
         public async Task<bool> UpdateRecurso(Recurso toUpdate)
         {
             var toupdateObj = (await client.Child("Recursos").OnceAsync<Recurso>())

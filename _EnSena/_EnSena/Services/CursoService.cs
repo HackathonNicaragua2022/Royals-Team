@@ -12,13 +12,31 @@ namespace _EnSena.Services
     public class CursoService
     {
         FirebaseClient client;
+        UsuarioCursoService UserCurses;
         public CursoService()
         {
             client = new FirebaseClient("alguna mamada de enlace");
 
         }
 
+        public async Task<List<Curso>> getCursosByUserId(int userId)
+        {
 
+            UserCurses = new UsuarioCursoService();
+            var userCursos = await UserCurses.GetUsuarioCursoById(userId);
+            var cursos = (await client.Child("Curses").OnceAsync<Curso>()).Select(x=>x.Object).ToList();
+            List<Curso> listaCursoUser = new List<Curso>();
+            foreach(Curso curso in cursos)
+            {
+                var userc = userCursos.Select(x => x.idCursoEnlace == curso.idCurso);
+                if (userc != null)
+                {
+                    listaCursoUser.Add(curso);
+                }
+            }
+
+            return listaCursoUser;
+        }
      
 
         public async Task<bool> IsCurseExist(Curso cursonuevo)
