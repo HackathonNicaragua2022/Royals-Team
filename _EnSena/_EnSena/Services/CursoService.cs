@@ -19,13 +19,7 @@ namespace _EnSena.Services
         }
 
 
-        public async Task<bool> IsUserExist(string uname)
-        {
-            var user = (await client.Child("Users").OnceAsync<Usuarios>()).
-                       Where(u => u.Object.user == uname).FirstOrDefault();
-
-            return (user != null);
-        }
+     
 
         public async Task<bool> IsCurseExist(Curso cursonuevo)
         {
