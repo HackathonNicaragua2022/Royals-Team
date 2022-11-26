@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _EnSena.Models
 {
-    class Leccion
+   public class Leccion
     {
         public int idLeccion { get; set; }
         public string TituloLeccion { get; set; }
