@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:_EnSenas.View"
+             x:Class="_EnSenas.View.HomeView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Row="0" Margin="0,50,0,50">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Grid.Row="0" Grid.Column="0" Source="LOGO.png"  HeightRequest="250" />
+                </Grid>
+
+                <Grid Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="162"/>
+                        <RowDefinition Height="180"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="150"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton Source="Abecedario.png" Grid.Row="0" Grid.Column="0" WidthRequest="150"
+                             HeightRequest="150" x:Name="btn_abc" BindingContext="{DataTemplate local:ABCView}"
+                             BackgroundColor="Transparent" HorizontalOptions="Center"
+                             Margin="0,0,0,30"/>
+
+                    <ImageButton Source="DiasSemana.png" Grid.Row="0" Grid.Column="1" WidthRequest="150" 
+                             HeightRequest="150" x:Name="btn_Dias" BindingContext="{DataTemplate local:WeekDayView}"
+                             BackgroundColor="Transparent" HorizontalOptions="Center"
+                             Margin="0,0,0,30"/>
+
+                    <ImageButton Source="Numeros.png" Grid.Row="1" Grid.Column="0" WidthRequest="150" 
+                             HeightRequest="150" x:Name="btn_nros" BindingContext="{DataTemplate local:NumberView}"
+                             BackgroundColor="Transparent" HorizontalOptions="Center"
+                             Margin="0,20,0,30" VerticalOptions="Center"/>
+
+                    <ImageButton Source="Saludos.png" Grid.Row="1" Grid.Column="1" WidthRequest="150" 
+                             HeightRequest="150" x:Name="btn_saludos" BindingContext="{DataTemplate local:GreetingView}"
+                             BackgroundColor="Transparent" HorizontalOptions="Center"
+                             Margin="0,20,0,30"/>
+                </Grid>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

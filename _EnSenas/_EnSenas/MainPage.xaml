@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:_EnSenas.View"
+       x:Class="_EnSenas.MainPage"
+             Title="En Señas" FlyoutBackgroundColor="#00b3f5" 
+             FlyoutWidth="200"
+             BackgroundColor="#f3aa20">
+
+    <FlyoutItem Title="Menu" Shell.TabBarIsVisible="False" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Inicio" IsTabStop="True" ContentTemplate="{DataTemplate local:HomeView}"/>
+        <ShellContent Title="Numeros" IsTabStop="True" ContentTemplate="{DataTemplate local:NumberView}"/>
+        <ShellContent Title="Abecedario" IsTabStop="True" ContentTemplate="{DataTemplate local:ABCView}"/>
+        <ShellContent Title="Dias" IsTabStop="True" ContentTemplate="{DataTemplate local:WeekDayView}"/>
+        <ShellContent Title="Saludos" IsTabStop="True" ContentTemplate="{DataTemplate local:GreetingView}"/>
+    </FlyoutItem>
+</Shell>
