@@ -3857,18 +3857,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Users\\derek\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Contacts\\Downloads\\EnSenas\\_EnSenas\\_EnSenas\\_EnSenas.Android\\_EnSenas.Android.csproj",
+      "projectUniqueName": "E:\\Escritorio\\_EnSenas\\_EnSenas\\_EnSenas.Android\\_EnSenas.Android.csproj",
       "projectName": "_EnSenas.Android",
-      "projectPath": "C:\\Users\\Usuario\\Contacts\\Downloads\\EnSenas\\_EnSenas\\_EnSenas\\_EnSenas.Android\\_EnSenas.Android.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Contacts\\Downloads\\EnSenas\\_EnSenas\\_EnSenas\\_EnSenas.Android\\obj\\",
+      "projectPath": "E:\\Escritorio\\_EnSenas\\_EnSenas\\_EnSenas.Android\\_EnSenas.Android.csproj",
+      "packagesPath": "C:\\Users\\derek\\.nuget\\packages\\",
+      "outputPath": "E:\\Escritorio\\_EnSenas\\_EnSenas\\_EnSenas.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3876,7 +3876,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\derek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -3891,8 +3891,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Usuario\\Contacts\\Downloads\\EnSenas\\_EnSenas\\_EnSenas\\_EnSenas\\_EnSenas.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Contacts\\Downloads\\EnSenas\\_EnSenas\\_EnSenas\\_EnSenas\\_EnSenas.csproj"
+            "E:\\Escritorio\\_EnSenas\\_EnSenas\\_EnSenas\\_EnSenas.csproj": {
+              "projectPath": "E:\\Escritorio\\_EnSenas\\_EnSenas\\_EnSenas\\_EnSenas.csproj"
             }
           }
         }
